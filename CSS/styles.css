@@ -20,7 +20,7 @@ body{
 
 /*Navbar*/
 
-.navbar .navbar-nav .nav-item:nth-child(1) .nav-link{
+.navbar .navbar-nav .nav-link{
     color: #a5410f;
     font-weight: 700;
 }
@@ -110,6 +110,48 @@ body{
     opacity: 1;
 }
 
+.modal-title{
+    text-align: left;
+    letter-spacing: 0.4px;
+    color: #2D3142;
+    opacity: 1;
+    font-weight: bold;
+}
+
+/* Custom CSS for styling */
+.form-group.row {
+    margin-bottom: 20px;
+}
+
+.form-group{
+    opacity: 1;
+}
+
+/* Optional: Adjust width for larger screens */
+@media (min-width: 576px) {
+    .form-group.row .col {
+        width: 48%;
+    }
+}
+
+
+.btn-primary {
+    
+    background-color: #FF3147; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+    width: 100%;
+
+}
+
+.btn-primary:hover {
+    background-color: #FF3147; /* Change background color on hover */
+}
+
 
 #whatWeDoSection {
     text-align: center;
@@ -181,6 +223,12 @@ body{
     opacity: 0;
     transition: opacity 0.3s ease;
 }
+
+.hover-content{
+    position: relative;
+}
+
+
 
 .what-we-do-item .hover-content img {
     width: 50%;
@@ -459,18 +507,35 @@ p.d-inline-block{
     margin: 5px 0;
 }
 .feedback-title {
-    color: #dc3545;
-    margin-bottom: 20px;
+    text-align: center;
+    font: normal normal 600 24px/26px Cormorant SC;
+    letter-spacing: 0px;
+    color: #FF3147;
+    text-transform: uppercase;
+    opacity: 1;
 }
 .feedback-text {
-    font-size: 1.1em;
-    margin-bottom: 20px;
     text-align: left;
+    font: normal normal normal 20px/34px Poppins;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
 }
 .feedback-author {
-    font-weight: bold;
-    color: #dc3545;
     text-align: left;
+    font: normal normal bold 20px/34px Poppins;
+    letter-spacing: 0px;
+    color: #FF3147;
+    opacity: 1;
+}
+
+.feedback-section h2{
+    text-align: center;
+    font: normal normal bold 45px/65px Cormorant SC;
+    letter-spacing: 0px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
 }
 .footer-logos {
     background-color: #e60b2c;
@@ -481,3 +546,33 @@ p.d-inline-block{
     margin: 0 15px;
     max-width: 100px;
 }
+
+/* CSS styles for the footer section */
+.footer {
+    position: relative; /* Set position to relative */
+    width: 100%; /* Optionally set width */
+}
+
+/* CSS styles for the image container */
+.image-container {
+    position: relative; /* Set position to relative */
+}
+
+/* CSS styles for the bottom image */
+.bottom-image {
+    position: absolute; /* Set position to absolute */
+    top: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    width: 100%; /* Set width to fill the container */
+    height: 200px; /* Set height as needed */
+}
+
+/* CSS styles for the top image */
+.top-image {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-top: 70px;
+    transform: translate(-50%, 0%);
+}
+
